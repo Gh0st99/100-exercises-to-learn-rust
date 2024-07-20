@@ -14,12 +14,8 @@ fn factorial(n: u32) -> u32 {
     if n == 0 || n == 1{
         return 1;
     }
-
-     let mut ret = 1;
-    for i in 1..n+1 {
-        ret *= i;
-    }
-    return ret;
+    
+    return n*factorial(n - 1);
     
 }
 
